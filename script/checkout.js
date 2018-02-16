@@ -12,11 +12,12 @@ btn.addEventListener('click',function (e) {
         alertMessage += "Fyll i ditt Efternamn \n";
     }
 
-    if(document.getElementById("eMail").value === ""){
+    if(document.getElementById("eMail").value === "") {
         alertMessage += "Fyll i din Epost \n";
     }
 
-    if(!emailPatter.test(eMail.value)){
+    else if(!emailPatter.test(eMail.value))
+    {
         alertMessage += "Kontrollera att din Epost är korrekt \n";
     }
 
