@@ -1,0 +1,55 @@
+body{
+    background: honeydew;
+    color: cornflowerblue;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+p{
+    text-align: right;
+}
+
+a{
+    text-decoration: none;
+}
+
+#productO{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div{
+    width: 30%;
+    margin-bottom: 2%;
+}
+
+img{
+     height: 100px;
+     width: 150px;
+     border: solid black 1px;
+}
+
+section > form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+section > form > input{
+    margin-bottom: 4px;
+}
+
+button{
+    margin-top: 4px;
+    color: black;
+    background-color: gainsboro;
+    border: solid black 1px;
+}
