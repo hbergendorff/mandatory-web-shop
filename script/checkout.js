@@ -1,3 +1,4 @@
+let emailPatter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 let btn = document.getElementById("send");
 btn.addEventListener('click',function (e) {
     e.preventDefault();
@@ -13,6 +14,10 @@ btn.addEventListener('click',function (e) {
 
     if(document.getElementById("eMail").value === ""){
         alertMessage += "Fyll i din Epost \n";
+    }
+
+    if(!emailPatter.test(eMail.value)){
+        alertMessage += "Kontrollera att din Epost är korrekt \n";
     }
 
     if(document.getElementById("address").value === ""){

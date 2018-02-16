@@ -70,9 +70,7 @@ let cakeNine = {
 let newArray = [cakeOne, cakeTwo, cakeThree, cakeFour, cakeFive, cakeSix, cakeSeven, cakeEight, cakeNine];
 
 for(let i in newArray){
-    document.getElementById("productO").innerHTML += `<div>${newArray[i].name} <br> 
-                                                    ${newArray[i].price} :-<br> 
-                                                    ${newArray[i].desc} <br>
-                                                    <img src=' ${newArray[i].img}'/> </div>`;
+    document.getElementById("productO").innerHTML += `<div><h3>${newArray[i].name}</h3><img src=' ${newArray[i].img}'/><p>${newArray[i].price} :-</p>${newArray[i].desc}</div>`;
+                                                    
 }
 
