@@ -1,4 +1,4 @@
-let emailPatter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+let emailPatter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9 \-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 let btn = document.getElementById("send");
 btn.addEventListener('click',function (e) {
     e.preventDefault();
